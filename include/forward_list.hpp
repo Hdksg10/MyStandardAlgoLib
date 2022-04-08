@@ -26,8 +26,8 @@ public:
     {
         Nodes* pos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
     public:
-        iterator(Nodes* position) : pos(position){}
-        ElemT operator*()
+        explicit iterator(Nodes* position) : pos(position){}
+        valuetype operator*()
         {
             return pos->content;
         }
@@ -50,6 +50,7 @@ public:
     };
     forward_list()
     {
+        size = 0;
         head = new Nodes(nullptr);
         tail = head->next;
     }
