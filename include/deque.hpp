@@ -1,0 +1,8 @@
+//
+// Created by Rhywu on 2022/4/7.
+//
+
+#ifndef MYSTANDARDALGOLIB_DEQUE_HPP
+#define MYSTANDARDALGOLIB_DEQUE_HPP
+
+#endif //MYSTANDARDALGOLIB_DEQUE_HPP
