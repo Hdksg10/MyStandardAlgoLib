@@ -86,6 +86,32 @@ void ctd::binary_search_tree<ElemT>::insert(const typevalue &val)
     }
     else
         _root = curr;
+//    node*curr = _root;
+//    while(curr)
+//    {
+//        if(curr->key < val)
+//        {
+//            if(curr->right == nullptr)
+//            {
+//                curr->right = new node(val,
+//                break;
+//            }
+//            else
+//            {
+//                curr = curr->right;
+//            }
+//        }
+//        else
+//        {
+//            if(curr->left == nullptr)
+//            {
+//                curr->left = new TreeNode(val);
+//                break;
+//            }
+//            else
+//                curr = curr->left;
+//        }
+//    }
 }
 /**
  * 构造函数

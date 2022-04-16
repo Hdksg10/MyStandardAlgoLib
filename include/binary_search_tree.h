@@ -22,13 +22,12 @@ namespace ctd{
         using typevalue = ElemT;
         using node = Nodes<typevalue>;
     private:
-
+        node* _root;
         void _delNode(node* root);
         node* _successor(node* node);
         void _transplant(node* curr, node* target);
         ctd::Nodes<ElemT>*& _findParentPtr(node* curr);
     public:
-        node* _root;
         binary_search_tree();
         ~binary_search_tree();
         void temp_print();
