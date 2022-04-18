@@ -4,22 +4,21 @@
 #include "include/sort.hpp"
 #include "include/forward_list.hpp"
 #include "include/binary_search_tree.h"
-#include "src/binary_search_tree.cpp"
 #include "include/rb_tree.h"
-#include "src/rb_tree.cpp"
 using namespace ctd;
 
 int main()
 {
 
-    std::vector<int> rs{5,4,3,2,1};
-    auto st = std::begin(rs);
-    auto ed = std::end(rs);
-    mergesort(st, ed);
+    std::vector<int> rs{3,5,1,6,-2,0,12,12,-4,-2,3,0,9};
+    quicksort(rs.begin(), rs.end());
     for(auto i : rs)
     {
-        std::cout<<i;
+        std::cout<<i<<" ";
     }
+//    for(int i = 0; i <100; i++)
+//        std::cout<<ctd::random_int(1,12)<<" ";
+    //std::cout<<ctd::distance(rs.begin(), rs.end());
     return 0;
 }
 
